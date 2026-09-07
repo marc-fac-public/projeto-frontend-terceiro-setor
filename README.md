@@ -26,3 +26,9 @@ Para visualizar a aplicação corretamente e garantir o funcionamento das requis
 1. Abra o terminal na raiz do projeto.
 2. Execute o comando: `python3 -m http.server 8080`
 3. Acesse `http://localhost:8080` no seu navegador.
+
+## 5. Práticas de Versionamento
+O desenvolvimento deste projeto foi gerido através da metodologia **GitFlow** e de **Versionamento Semântico (SemVer)**, garantindo a organização e a rastreabilidade das entregas:
+- **Branches (`main` e `develop`):** A branch `main` é restrita a códigos estáveis de produção (releases), enquanto a `develop` centraliza a integração contínua do desenvolvimento. Adições pontuais são tratadas em ramificações `feature/`.
+- **Commits:** Padronizados através de **Conventional Commits** (ex: `feat:`, `chore:`, `docs:`), facilitando a leitura do histórico e a geração de *changelogs*.
+- **Releases (Tags):** Entregas marcadas sequencialmente, partindo da estruturação inicial (`v0.1.0`) até a versão de produção oficial (`v1.0.0`).
