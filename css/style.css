@@ -9,6 +9,7 @@
   --color-accent-500: #ef4444; /* Erro / Urgente */
   
   /* Cores Neutras */
+  --color-surface: #ffffff;
   --color-neutral-50: #f8fafc;
   --color-neutral-200: #e2e8f0;
   --color-neutral-700: #64748b;
@@ -95,7 +96,7 @@ h1, h2, h3, h4, h5, h6 {
    1. CABEÇALHO E NAVEGAÇÃO (FLEXBOX)
    ========================================= */
 .header {
-  background-color: white;
+  background-color: var(--color-surface);
   border-bottom: 1px solid var(--color-neutral-200);
   padding: var(--space-4) 0;
   position: sticky;
@@ -169,7 +170,7 @@ h1, h2, h3, h4, h5, h6 {
     top: 100%;
     left: 0;
     width: 100%;
-    background: white;
+    background: var(--color-surface);
     flex-direction: column;
     padding: var(--space-4);
     box-shadow: var(--shadow-md);
@@ -200,7 +201,7 @@ h1, h2, h3, h4, h5, h6 {
 .hero p { font-size: 1.25rem; max-width: 700px; margin: 0 auto var(--space-8); color: var(--color-neutral-700); }
 
 .section { padding: var(--space-12) 0; }
-.section-alt { background-color: white; }
+.section-alt { background-color: var(--color-surface); }
 .section-header { text-align: center; margin-bottom: var(--space-12); }
 .section-header h2 { font-size: var(--text-2xl); }
 .section-header p { color: var(--color-neutral-700); }
@@ -268,7 +269,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* CARDS PROJETO */
 .card-projeto {
-  background: white;
+  background: var(--color-surface);
   border-radius: var(--radius);
   border: 1px solid var(--color-neutral-200);
   padding: var(--space-6);
@@ -310,7 +311,7 @@ h1, h2, h3, h4, h5, h6 {
 .form-container {
   max-width: 600px;
   margin: 0 auto;
-  background-color: white;
+  background-color: var(--color-surface);
   padding: var(--space-8);
   border-radius: var(--radius);
   box-shadow: var(--shadow-md);
@@ -332,7 +333,7 @@ h1, h2, h3, h4, h5, h6 {
   outline: none;
   border-color: var(--color-primary-500);
   box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.2);
-  background-color: white;
+  background-color: var(--color-surface);
 }
 
 .form-control:not(:placeholder-shown):valid { border-color: var(--color-secondary-500); background-color: #f0fdf4; }
@@ -374,3 +375,23 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: auto;
 }
 .site-footer p { color: #94a3b8; }
+
+/* =========================================
+   6. DARK MODE (WCAG CONTRAST)
+   ========================================= */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-surface: #1e293b;
+    --color-neutral-50: #0f172a;
+    --color-neutral-200: #334155;
+    --color-neutral-700: #94a3b8;
+    --color-neutral-900: #f8fafc;
+  }
+  
+  .hero {
+    background: linear-gradient(135deg, var(--color-surface) 0%, #0f172a 100%);
+  }
+
+  .form-control:not(:placeholder-shown):valid { background-color: rgba(16, 185, 129, 0.1); }
+  .form-control:not(:placeholder-shown):invalid { background-color: rgba(239, 68, 68, 0.1); }
+}
