@@ -22,6 +22,10 @@ function gerenciarRota() {
       </section>
     `;
 
+    // Gerenciamento de Foco SPA (Acessibilidade)
+    appContainer.setAttribute('tabindex', '-1');
+    appContainer.focus();
+
     // Fechar menu mobile ao trocar de rota
     document.getElementById('menu-toggle').checked = false;
 
