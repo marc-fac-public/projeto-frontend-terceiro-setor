@@ -76,7 +76,7 @@ const Views = {
               <h3 class="card-title">Cestas Básicas</h3>
               <p class="card-desc">Distribuição de alimentos para 100 famílias da comunidade local em situação de vulnerabilidade.</p>
             </div>
-            <button class="btn btn-primary" onclick="App.mostrarToast('Obrigado pelo interesse! Em breve enviaremos detalhes.')">Apoiar Projeto</button>
+            <button class="btn btn-primary" aria-label="Apoiar Projeto: Cestas Básicas" onclick="App.mostrarToast('Obrigado pelo interesse! Em breve enviaremos detalhes.')">Apoiar Projeto</button>
           </article>
 
           <!-- CARD 2 -->
@@ -86,7 +86,7 @@ const Views = {
               <h3 class="card-title">Atendimento Médico</h3>
               <p class="card-desc">Mutirão de exames oftalmológicos gratuitos para crianças carentes da rede pública.</p>
             </div>
-            <button class="btn btn-primary" onclick="App.mostrarToast('Obrigado pelo interesse! Em breve enviaremos detalhes.')">Apoiar Projeto</button>
+            <button class="btn btn-primary" aria-label="Apoiar Projeto: Atendimento Médico" onclick="App.mostrarToast('Obrigado pelo interesse! Em breve enviaremos detalhes.')">Apoiar Projeto</button>
           </article>
 
           <!-- CARD 3 -->
@@ -155,17 +155,17 @@ const Views = {
             
             <div class="form-group" style="grid-column: span 12;">
               <label class="form-label" for="nome">Nome Completo</label>
-              <input type="text" id="nome" class="form-control" placeholder="Digite seu nome" required minlength="3">
+              <input type="text" id="nome" class="form-control" placeholder="Digite seu nome" required aria-required="true" minlength="3">
             </div>
 
             <div class="form-group" style="grid-column: span 12;">
               <label class="form-label" for="email">E-mail</label>
-              <input type="email" id="email" class="form-control" placeholder="exemplo@email.com" required>
+              <input type="email" id="email" class="form-control" placeholder="exemplo@email.com" required aria-required="true">
             </div>
             
             <div class="form-group" style="grid-column: span 12;">
               <label class="form-label" for="area">Área de Interesse</label>
-              <select id="area" class="form-control" required>
+              <select id="area" class="form-control" required aria-required="true">
                 <option value="" disabled selected>Selecione uma área...</option>
                 <option value="saude">Saúde e Bem-estar</option>
                 <option value="educacao">Educação e Reforço Escolar</option>
