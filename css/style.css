@@ -2,7 +2,7 @@
 
 :root {
   /* Cores da Marca e Design System (Desafio 2 + Desafio 1) */
-  --color-primary-500: #0ea5e9;
+  --color-primary-500: #0275d8;
   --color-primary-600: #0284c7;
   --color-primary-700: #0369a1;
   --color-secondary-500: #10b981;
@@ -44,6 +44,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-primary-700);
+  outline-offset: 2px;
 }
 
 body {
