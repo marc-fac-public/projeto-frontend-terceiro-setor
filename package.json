@@ -1,0 +1,25 @@
+{
+  "name": "desafio_front_end4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "vite build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marc-fac-public/projeto-frontend-terceiro-setor.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/marc-fac-public/projeto-frontend-terceiro-setor/issues"
+  },
+  "homepage": "https://github.com/marc-fac-public/projeto-frontend-terceiro-setor#readme",
+  "devDependencies": {
+    "vite": "^8.2.2"
+  }
+}
