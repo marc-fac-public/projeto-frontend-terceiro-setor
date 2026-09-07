@@ -21,7 +21,11 @@ const Views = {
             
             <article style="display: flex; gap: 2rem; align-items: center; flex-wrap: wrap;">
                 <div style="flex: 1; min-width: 300px;">
-                    <img src="img/voluntarios.jpg" alt="Grupo de voluntários da ONG Esperança Viva" style="width: 100%; border-radius: 8px; box-shadow: var(--shadow-sm);">
+                    <picture>
+                        <source srcset="img/voluntarios-small.webp 400w, img/voluntarios.webp 800w" sizes="(max-width: 600px) 400px, 800px" type="image/webp">
+                        <source srcset="img/voluntarios-small.jpg 400w, img/voluntarios.jpg 800w" sizes="(max-width: 600px) 400px, 800px" type="image/jpeg">
+                        <img src="img/voluntarios.jpg" alt="Grupo de voluntários da ONG Esperança Viva" style="width: 100%; height: auto; border-radius: 8px; box-shadow: var(--shadow-sm);" loading="lazy" decoding="async">
+                    </picture>
                 </div>
                 <div style="flex: 1; min-width: 300px;">
                     <h3>Nossa História</h3>
